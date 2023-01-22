@@ -21,7 +21,7 @@ const Navbar = () => {
     };
   };
   return (
-    <div className="w-screen h-[80px] sticky top-0 bg-white drop-shadow-lg mb-3 px-4">
+    <div className="w-screen h-[80px] sticky top-0 bg-white drop-shadow-lg  px-4">
       <div className="px-2 flex justify-between items-center w-full h-full max-w-[1240px] mx-auto">
         <NavLink to="/" className="text-2xl uppercase hidden md:flex">
         shopping
@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className="md:hidden cursor-pointer text-blue-500"
+          className="md:hidden cursor-pointer text-blue-500 "
           onClick={handleClick}
         >
           {click ? <FaTimes /> : <FaBars />}
