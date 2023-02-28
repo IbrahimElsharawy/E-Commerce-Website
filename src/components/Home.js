@@ -1,9 +1,10 @@
 import React from "react";
 import bg from "../assets/bg.avif";
+import Products from "./Products";
 
 const Home = () => {
   return (
-    <div className="w-full">
+ <div className="w-full overflow-x-hidden">
       <div className="max-h-[600px] relative -z-10">
         <div className="absolute bg-black/40 w-full h-full max-h-[600px]  ">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center">
@@ -17,7 +18,9 @@ const Home = () => {
         </div>
         <img className="w-full max-h-[600px] object-cover" src={bg} alt="/" />
       </div>
+<Products/>
     </div>
+   
   );
 };
 
